@@ -23,7 +23,6 @@ public class DosThread extends Thread {
             }
         }
     }
-
     private void attack() throws IOException {
         HttpURLConnection connection= (HttpURLConnection) url.openConnection();
         connection.setDoOutput(true);

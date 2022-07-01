@@ -1,4 +1,6 @@
 //https://moodlelms.eelu.edu.eg
+import tui.GetData;
+
 import java.util.Scanner;
 public class MainController {
     private Scanner input;
@@ -6,6 +8,7 @@ public class MainController {
     public MainController() throws Exception {
         takeInput();
         attack();
+        GetData.init();
     }
     public void takeInput() {
         input = new Scanner(System.in);
@@ -19,4 +22,5 @@ public class MainController {
             ddosThread.start();
         }
     }
+
 }
